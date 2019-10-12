@@ -1,0 +1,209 @@
+@namespace tan "tag:textalign.net,2015:ns";
+@namespace tei "http://www.tei-c.org/ns/1.0";
+@namespace oxy url('http://www.oxygenxml.com/extensions/author');
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+/* CSS file intended to be used to configure how Wright catalog manuscripts are rendered by oXygen Author */
+
+/* Highlight those elements whose text nodes are targets for editing */
+idno,
+locus,
+rubric,
+incipit,
+author,
+note,
+title,
+handNote > desc,
+additions > p,
+item > p,
+condition p,
+origDate,
+origPlace,
+change{
+    border: 1px green solid;
+    background-color: lightyellow;
+}
+
+
+
+/* BACKGROUND */
+sourceDesc {
+    background: ghostwhite
+}
+
+/* BORDERS */
+
+
+/* COLORS */
+oxy|entity[name ^= '#'] {
+    background-color: green;
+}
+oxy|comment {
+    background-color: lightgray;
+}
+*:before(9) {
+    color: gray
+}
+*:before(8),
+*:before(7),
+*:before(6){
+    color: darkgreen
+}
+
+/* CONTENT */
+/* add the element name */
+*:root,
+teiHeader *:before(9)
+{
+    content: oxy_local-name() ' ';
+}
+additions:before(9){
+    content: 'notes on additions: '
+}
+p:before(9){
+    content: ''
+}
+
+/* DISPLAY */
+* {
+    display: block;
+}
+titleStmt,
+editionStmt,
+publicationStmt,
+profileDesc,
+facsimile,
+supportDesc > extent,
+layoutDesc,
+bindingDesc,
+sealDesc,
+encodingDesc,
+body {
+    display: none;
+}
+
+
+/* FONTS */
+*:lang(syr),
+*:lang(syr-Syre),
+*:lang(syr-Syrj),
+*:lang(syr-Syrn),
+*:lang(syr-x-syrm),
+*:lang(syr-x-syrp),
+*:lang(ar-Syrc),
+*:lang(ar-Syrj),
+*:lang(ar-Syrn) {
+    font-family: noto, 'Serto Urhoy', 'Estrangelo Nisibin';
+    text-align: right;
+    font-size: 24px;
+}
+*:lang(cop) {
+    font-family: antinoou;
+}
+*:lang(grc) {
+    font-family: 'Gentium Plus', 'Garamond Premiere Pro', 'Gentium Plus', serif;
+}
+
+/* MARGINS */
+* {
+    margin-left: 8px;
+}
+
+/* SPECIAL OXYGEN */
+
+msItem:before(7) {
+    background-color: lightyellow;
+    content: 
+    'defective? ' oxy_checkbox(
+edit, "@defective", 
+values, "true", 
+uncheckedValues, "false");
+}
+change[when]:before(8) {
+    content: oxy_datePicker(
+edit, "@when", 
+format, "yyyy-MM-dd")
+}
+*[href] {
+    content: 
+    oxy_urlChooser(
+edit, "@href", 
+columns 25);
+}
+change[who]:before(7){
+    background-color: lightyellow;
+    content: 'who: ' oxy_textfield(
+edit, "@who", 
+columns, 15
+)
+}
+locus:before(8) {
+    background-color: lightyellow;
+    content: 'from: ' oxy_textfield(
+edit, "@from", 
+columns, 15
+)
+}
+locus:before(7) {
+    background-color: lightyellow;
+    content: ' to: ' oxy_textfield(
+edit, "@to", 
+columns, 15
+)
+}
+*[ref]:before(8) {
+    content: 'ref: ' oxy_textfield(
+edit, "@ref", 
+columns, 15
+)
+}
+title[xml|lang]:before(7) {
+    background-color: lightyellow;
+    content: 'language: ' oxy_combobox(
+edit, '@xml:lang', 
+editable, false, 
+values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, ar-Syrj, ar-Syrn, en, ar, fr, de, la, grc, cop', 
+labels, 'Unvocalized Syriac of any variety or period, Syriac in Estrangela, Vocalized West Syriac, Vocalized East Syriac, Melkite Syriac, Palestinian Syriac, Unvocalized or Undetermined Arabic Garshuni, Arabic Garshuni in Vocalized West Syriac Script, Arabic Garshuni in Vocalized East Syriac Script, English, Arabic, French, German, Latin, Ancient Greek, Coptic'
+)
+}
+objectDesc[form]:before(8) {
+    background-color: lightyellow;
+    content: 'form: ' oxy_textfield(
+edit, "@form", 
+columns, 15
+)
+}
+supportDesc[material]:before(8) {
+    background-color: lightyellow;
+    content: 'material: ' oxy_textfield(
+edit, "@material", 
+columns, 15
+)
+}
+handNote:before(8) {
+    background-color: lightyellow;
+    content: 'scope: ' oxy_combobox(
+edit, '@scope', 
+editable, false, 
+values, 'sole, major, minor', 
+labels, 'sole, major, minor'
+)
+    
+}
+handNote:before(7) {
+    background-color: lightyellow;
+    content: 'script: ' oxy_combobox(
+edit, '@script', 
+editable, false, 
+values, 'syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, mixed, unknown', 
+labels, 'Estrangela, Jacobite Syriac or Syriac with Greek vowels, Nestorian Syriac or Syriac with pointed vowels, Malkite or Melkite, Palestinian Syriac, Arabic translation in Syriac Characters, mixed, unknown'
+)
+    
+}
+handNote:before(6) {
+    background-color: lightyellow;
+    content: 'ref: ' oxy_textfield(
+edit, "@medium", 
+columns, 15
+)
+    
+}

@@ -1,0 +1,106 @@
+<?xml-model href="../../schemas/syriaca-tei-main.rnc" type="application/relax-ng-compact-syntax"?>
+<!--<?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt/>
+      <editionStmt/>
+      <publicationStmt/>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <idno type="URI">103</idno>
+            <altIdentifier>
+              <idno type="BL-Shelfmark">Add MS 14439</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary/>
+            <textLang/>
+            <msItem defective="true">
+              <locus from="1a" to="29"/>
+              <title ref="http://syriaca.org/work/6" xml:lang="en">The book of Joshua, according to the Peshitta version.</title>
+              <finalRubric xml:lang="syr"><locus from="29" to="29"/>
+              </finalRubric>
+            </msItem>
+            <msItem>
+              <locus from="29b" to="69"/>
+              <title ref="http://syriaca.org/work/7">The book of Judges, according to the Peshitta version</title>
+              <rubric xml:lang="syr"><locus from="29b" to="29b"/>ܣܦܪ ܕܝ̈ܢܐ ܕܒܢ̈ܝ ܐܝܣܪܝܠ. ܕܡܬܩܪܐ. ܥܒܪܐܝܬ. ܫ̈ܦܛܐ܀
+              </rubric>
+              <explicit xml:lang="syr">ܫܠܡ . ܟܬܒܐ . ܕܝܫܘܥ</explicit>
+              <note>This text appears to be the same as that edited in <bibl>Smith, Early biblical manuscripts, vii</bibl>. It was by Smith incorrectly attributed to <persName ref="http://syriaca.org/650">Narsai</persName>.</note>
+              <msItem defective="true"><!-- Nested msItem -->
+                <locus from="30a"/>
+                <author ref="http://syriaca.org/person/13">Ephrem</author>
+                <title>Various madrashe attributed to Ephrem</title>
+                <incipit xml:lang="syr">ܕܡܬܩܪܐ. ܥܒܪܐܝܬ. ܫ̈ܦܛܐ܀</incipit>
+                <quote>ܣܦܪ ܕܝ̈ܢܐ ܕܒܢ̈ܝ ܐܝܣܪܝܠ. ܕܡܬܩܪܐ. ܥܒܪܐܝܬ. ܫ̈ܦܛܐ܀
+                  <locus from="35b"/>
+                </quote>
+                <quote>ܫܠܡ . ܟܬܒܐ . ܕܝܫܘܥ . ܒܪܢܘܢ܀
+                  <locus from="62b"/>
+                </quote>
+              </msItem>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc form="codex">
+              <supportDesc material="perg">
+                <support/>
+                <condition>
+                  <p>Leaves are wanting at the beginning and end.</p>
+                </condition>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scope="major" script="syr-Syre" medium="unknown">
+                <desc>This manuscript is written in a large Estrangela of the<origDate notBefore="0500" notAfter="0700">vith or viith cent.</origDate>
+                </desc>
+              </handNote>
+              <handNote scope="minor" script="syr-Syrj" medium="unknown">
+                <desc>
+                  See additions.
+                </desc>
+              </handNote>
+            </handDesc>
+            <additions>
+              <list>
+                <item>
+                  <p>A later hand has added Greek vowels here and there.</p>
+                </item>
+                <item>
+                  <p>A later hand has also added Syriac vowel-points.</p>
+                </item>
+                <item>
+                  <p>A modern hand (perhaps the same that added the vowels) has marked the lessons on the margins, and also appended a few notes, either referring to the text of the LXX., or explanatory of proper names and other words.</p>
+                </item>
+                <item>
+                  <locus from="18b" to="18b"/>
+                  <p>In one place a Greek word is written on the margin by the same hand, viz. fol. 18b.</p>
+                </item>
+              </list>
+            </additions>
+          </physDesc>
+          <history>
+            <summary/>
+            <origin>
+     <origDate when="0615" calendar="Gregorian">A. D. 615</origDate>
+     <origDate when-custom="0926" datingMethod="Seleucid">A. Gr. 926</origDate>
+</origin>
+          </history>
+          <additional/>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc/>
+    <profileDesc/>
+    <revisionDesc status="draft">
+      <change when="2013-07-08" who="http://syriaca.org/documentation/editors.xml#dgreeson">Initial TEI encoding.</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile/>
+  <text>
+    <body/>
+  </text>
+</TEI>
