@@ -1,7 +1,4 @@
-<!--<?oxygen RNGSchema="../../schemas/tei_all.rng" type="compact"?>-->
-<!--<?oxygen RNGSchema="enrich-syriaca.rnc" type="compact"?>-->
 <?oxygen RNGSchema="../../schemas/syriaca-tei-main.rnc" type="compact"?>
-<!--<?xml-stylesheet type="text/css" href="SRPEnrichCSS.css"?>-->
 <TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
     <fileDesc>
@@ -17,61 +14,32 @@
       <sourceDesc>
         <msDesc>
           <msIdentifier>
-            <idno type="URI">$BOX$</idno>
+            <idno type="URI">527</idno>
             <altIdentifier>
-              <idno type="BL-Shelfmark">$BOX$ [example, Add MS $$$, ff]</idno>
+              <idno type="BL-Shelfmark">17213</idno>
             </altIdentifier>
           </msIdentifier>
           <msContents>
             <summary/>
             <textLang mainLang=""/>
-            <msItem defective="$BOX$">
-              <locus from="$BOX$" to="$BOX$[usually empty]"/>
-              <author ref="$BOX$">$BOX$</author>
-              <!-- button to add author elements -->
-              <!-- ability to enter XML in the box -->
-              <title ref="$BOX$" xml:lang="$MENU$">$BOX$</title>
-              <!-- button to add title elements -->
-              <!-- ability to enter XML in the box -->
-              <!-- Menu labels and contents: 
-          <language ident="syr">Unvocalized Syriac of any variety or period</language>
-          <language ident="syr-Syre">Syriac in Estrangela</language>
-          <language ident="syr-Syrj">Vocalized West Syriac</language>
-          <language ident="syr-Syrn">Vocalized East Syriac</language>
-          <language ident="syr-x-syrm">Melkite Syriac</language>
-          <language ident="syr-x-syrp">Palestinian Syriac</language>
-          <language ident="ar-Syrc">Unvocalized or Undetermined Arabic Garshuni</language>
-          <language ident="ar-Syrj">Arabic Garshuni in Vocalized West Syriac Script</language>
-          <language ident="ar-Syrn">Arabic Garshuni in Vocalized East Syriac Script</language>        
-          <language ident="en">English</language>
-          <language ident="ar">Arabic</language>
-          <language ident="fr">French</language>
-          <language ident="de">German</language>
-          <language ident="la">Latin</language>
-          <language ident="grc">Ancient Greek</language>
-          <language ident="cop">Coptic</language>
-                -->
-              <rubric xml:lang="syr"> $BOX$ </rubric>
-              <!-- button to add rubric elements -->
-              <incipit xml:lang="syr">$BOX$</incipit>
+            <msItem defective="true">
+              <locus from="4" to="5"/>
+              <author ref="url://some-id">Eusebius of Caesarea</author>
+              <title ref="Letter to Carpianus" xml:lang="syr">ܫܠ̣ܡܬ ܐܓܪܬܐ ܕܟܬ̣ܒ ܐܘܣܒܝܣ̣ ܠܩܪܦܝܢܘܣ̣.
+                ܥܠ ܦܘܫܩܐ ܕܩ̈ܢܘܢܐ. </title>
+              <rubric xml:lang="syr">none provided</rubric>
+              <incipit xml:lang="syr">none provided</incipit>
               <quote xml:lang="syr">
-                <locus from="$BOX$" to="$BOX$[usually empty]"/> $BOX$ </quote>
-              <!-- button to add quote elements -->
-              <explicit xml:lang="syr">
-                <locus from="$BOX$" to="$BOX$[usually empty]"/> $BOX$ </explicit>
-              <!-- button to add explicit elements -->
+                <locus from="1" to="2"/>Some quote</quote>
+              <explicit xml:lang="syr"><locus from="4" to="5"/>oae</explicit>
               <finalRubric xml:lang="syr">
-                <locus from="$BOX$" to="$BOX$[usually empty]"/> $BOX$ </finalRubric>
-              <!-- button to add finalRubric elements -->
+                <locus from="4" to="5"/> conclusion </finalRubric>
               <note>$BOX$</note>
-              <!-- button to add note elements -->
-              <!-- ability to enter XML in the box -->
             </msItem>
-            <!-- 2 buttons to add and/or nest msItems elements -->
           </msContents>
           <physDesc>
-            <objectDesc form="$MENU$">
-              <supportDesc material="$MENU$">
+            <objectDesc form="leaves">
+              <supportDesc material="vellum">
                 <extent>
                   <measure unit="content_pending" quantity="-1"/>
                 </extent>
@@ -81,7 +49,6 @@
                   <list>
                     <item>
                       <p>$BOX$</p>
-                      <!-- ability to enter XML in the box -->
                     </item>
                   </list>
                 </condition>
@@ -91,36 +58,19 @@
               </layoutDesc>
             </objectDesc>
             <handDesc>
-              <handNote xml:id="handNote1" scope="$MENU$" script="$MENU$"
-                medium="$BOX$[usually &apos;unknown&apos;">
-                <!-- @scope Menu: {'sole', 'major', 'minor'} -->
-                <!-- @script Menu: {'syr-Syre', 'syr-Syrj', 'syr-Syrn', 'syr-x-syrm', 'syr-x-syrp', 'ar-Syrc' 'mixed', 'unknown'} 
-                  Labels:
-                  syr-Syre = Estrangela
-                  syr-Syrj = Jacobite Syriac or Syriac with Greek vowels
-                  syr-Syrn = Nestorian Syriac or Syriac with pointed vowels
-                  syr-x-syrm = Malkite or Melkite 
-                  syr-x-syrp = Palestinian Syriac
-                  ar-Syrc = Arabic translation in Syriac Characters   
-                  -->
-                <desc>$BOX$</desc>
-                <!-- ability to enter XML in the box -->
-                <!-- button to add handNote elements -->
+              <handNote xml:id="handNote1" scope="sole" script="syr-Syre" medium="unknown">
+                <desc>The writing is a line, regular ##Estrangela of the vith cent. </desc>
               </handNote>
             </handDesc>
-            <additions>
-              <p>$Box$[Usually empty]</p>
-              <!-- label the above p as Notes on Additions -->
-              <list>
+            <additions>none<list>
                 <item>
-                  <locus from="$BOX$" to="$BOX$[usually empty]"/>
+                  <locus from="hm" to="notsurewhat"/>
                   <p>$BOX$</p>
-                  <!-- ability to enter XML in the box -->
-                  <p><quote xml:lang="syr">$BOX$</quote></p>
+                  <p>
+                    <quote xml:lang="syr">$BOX$</quote>
+                  </p>
                 </item>
-                <!-- button to add item elements -->
-              </list>
-            </additions>
+              </list></additions>
             <bindingDesc>
               <p>Content pending</p>
             </bindingDesc>
@@ -131,13 +81,8 @@
           </physDesc>
           <history>
             <origin>
-              <origDate notBefore="$BOX$" notAfter="$BOX$" from="$BOX$" to="$BOX$" when="$BOX$"
-                >$BOX$</origDate>
-              <!-- These attributes are mutually exclusive, how should we handle this? @when is mutually exclusive with @notBefore and @notAfter -->
-              <!-- Button to add origDate and to add a custom origDate based on below -->
-              <origDate notBefore-custom="$BOX$" notAfter-custom="$BOX$" from-custom="$BOX$"
-                to-custom="$BOX$" when-custom="$BOX$" datingMethod="$MENU$">$BOX$</origDate>
-              <origPlace ref="$BOX$" xml:lang="$MENU$">$BOX$</origPlace>
+              <origDate from="0500" to="0599">VI century</origDate>
+              <origPlace ref="url://someuri" xml:lang="en">London</origPlace>
             </origin>
             <provenance/>
             <acquisition/>
@@ -151,8 +96,7 @@
     </encodingDesc>
     <profileDesc/>
     <revisionDesc status="draft">
-      <change when="$ISODATEBOX$" who="$MENU$">Initial TEI encoding.</change>
-      <!-- @when takes entries in the form "YYYY-MM-DD" Please display the text "Initial TEI encoding." -->
+      <change when="2019-10-10" who="kalvesmaki">Initial TEI encoding.</change>
     </revisionDesc>
   </teiHeader>
   <facsimile>

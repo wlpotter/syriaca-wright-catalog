@@ -1,5 +1,5 @@
-<!--<?oxygen RNGSchema="../../schemas/tei_all.rng" type="compact"?>-->
-<!--<?oxygen RNGSchema="enrich-syriaca.rnc" type="compact"?>-->
+<!--<?oxygen RNGSchema="../../schemas/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>-->
+<!--<?oxygen RNGSchema="../../schemas/enrich-syriaca.rnc" type="compact"?>-->
 <?oxygen RNGSchema="../../schemas/syriaca-tei-main.rnc" type="compact"?>
 <?xml-stylesheet type="text/css" href="../../parameters/wright-mss.css"?>
 <TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">

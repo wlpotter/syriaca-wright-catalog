@@ -67,6 +67,7 @@ p:before(9){
 * {
     display: block;
 }
+
 titleStmt,
 editionStmt,
 publicationStmt,
@@ -79,6 +80,9 @@ sealDesc,
 encodingDesc,
 body {
     display: none;
+}
+oxy|processing-instruction{
+    display: none !important
 }
 
 
