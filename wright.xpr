@@ -93,6 +93,1486 @@
                                                 </poPatch>
                                                 <poPatch>
                                                     <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>36</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.child.locus</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Insert locus</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a child &lt;locus> to the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:msItem</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;locus from="$FIXME$" to="$FIXME$[usually empty]" xmlns="http://www.tei-c.org/ns/1.0"/></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>Inside as last child</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>37</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.locus</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Add locus</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a sibling &lt;locus> to the current locus</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:locus[last()]</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;locus from="$FIXME$" to="$FIXME$[usually empty]"  xmlns="http://www.tei-c.org/ns/1.0"/></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>self::node()</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>38</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.child.author</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Insert author</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a child &lt;author> to the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:msItem</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;author ref="$FIXME$" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/author></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>Inside as last child</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>39</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.author</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Add author</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a sibling &lt;author> to the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:author[last()]</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;author ref="$FIXME$" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/author></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>self::node()</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>40</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.child.title</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Insert title</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a child &lt;title> to the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:msItem</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;title ref="$FIXME$" xml:lang="syr" attribute="syr" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/title></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>Inside as last child</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>41</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.title</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Add title</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a sibling &lt;title> to the current title</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:title[last()]</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;title ref="$FIXME$" xml:lang="syr" attribute="syr" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/title></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>self::node()</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>42</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.child.rubric</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Insert rubric</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a child &lt;rubric> to the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:msItem</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;rubric xml:lang="syr" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/rubric></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>Inside as last child</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>43</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.rubric</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Add rubric</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a sibling &lt;rubric> to the current rubric</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:rubric[last()]</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;rubric xml:lang="syr" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/rubric></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>self::node()</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>44</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.child.incipit</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Insert incipit</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a child &lt;incipit> to the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:msItem</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;incipit xml:lang="syr" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/incipit></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>Inside as last child</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>45</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.incipit</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Add incipit</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a sibling &lt;incipit> to the current incipit</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:incipit[last()]</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;incipit xml:lang="syr" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/incipit></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>self::node()</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>46</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.child.quote</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Insert quote</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a child &lt;quote> to the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:msItem</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;quote xml:lang="syr" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/quote></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>Inside as last child</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>47</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.quote</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Add quote</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a sibling &lt;quote> to the current quote</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:quote[last()]</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;quote xml:lang="syr" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/quote></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>self::node()</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>48</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.child.explicit</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Insert explicit</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a child &lt;explicit> to the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:msItem</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;explicit xml:lang="syr" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/explicit></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>Inside as last child</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>49</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.explicit</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Add explicit</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a sibling &lt;explicit> to the current explicit</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:explicit[last()]</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;explicit xml:lang="syr" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/explicit></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>self::node()</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>50</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.child.finalRubric</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Insert finalRubric</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a child &lt;finalRubric> to the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:msItem</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;finalRubric xml:lang="syr" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/finalRubric></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>Inside as last child</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>51</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.finalRubric</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Add finalRubric</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a sibling &lt;finalRubric> to the current finalRubric</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:finalRubric[last()]</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;finalRubric xml:lang="syr" xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/finalRubric></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>self::node()</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>52</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.child.note</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Insert note</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a child &lt;note> to the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:msItem</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;note xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/note></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>Inside as last child</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>53</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.note</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Add note</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a sibling &lt;note> to the current explicit</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:note[last()]</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;note xmlns="http://www.tei-c.org/ns/1.0">$FIXME$&lt;/note></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>self::node()</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>54</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.child.msItem</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Insert msItem</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a child &lt;msItem> to the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:msItem</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;msItem defective="" xmlns="http://www.tei-c.org/ns/1.0">&lt;/msItem></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>Inside as last child</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>55</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.msItem</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Add msItem</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>append a sibling &lt;msItem> to the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:msItem[last()]</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;msItem defective="" xmlns="http://www.tei-c.org/ns/1.0">&lt;/msItem></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>goToNextEditablePosition</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>self::node()</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
                                                         <String>priority</String>
                                                     </field>
                                                     <field name="index">
