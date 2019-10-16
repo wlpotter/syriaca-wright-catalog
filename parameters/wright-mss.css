@@ -228,6 +228,12 @@ msItem:not(msItem:has(note)):after(9)
     oxy_button(
 actionID, "append.child.note");
 }
+msItem:not(msItem:has(msItem)):after(10)
+{
+    content: 
+    oxy_button(
+actionID, "append.child.msItem");
+}
 msItem locus:last-of-type:after(1) {
     content: 
     oxy_button(
