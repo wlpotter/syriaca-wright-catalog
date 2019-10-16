@@ -25,7 +25,7 @@ change {
     border: 1px green solid;
     background-color: lightyellow;
     visibility: -oxy-collapse-text ;
-    content: oxy_textfield(
+    content: '\A' oxy_textfield(
       edit, "#text", columns, 100
       );
 }
@@ -46,46 +46,60 @@ origDate:before(9),
 origPlace:before(9),
 change:before(9) {
     content: oxy_local-name() ' ';
+    color: black;
 }
 /* exceptions to the general label rule above */
 TEI:before(9) {
-    content: 'Wright manuscript metadata '
+    content: 'Wright manuscript metadata ';
+    color: black;
 }
 msIdentifier > idno:before(9) {
-    content: 'manuscript ID: '
+    content: 'manuscript ID: ';
+    color: black;
 }
 altIdentifier > idno:before(9) {
-    content: 'BL Shelfmark: '
+    content: 'BL Shelfmark: ';
+    color: black;
 }
 msContents:before(9) {
     content: 'MANUSCRIPT CONTENTS \A';
+    color: black;
 }
 msItem:before(9) {
     content: 'MANUSCRIPT ITEM \A';
+    color: black;
 }
 physDesc:before(9) {
     content: 'MANUSCRIPT PHYSICAL DESCRIPTION \A';
+    color: black;
 }
 condition > list > item > p:before(9) {
-  content: 'Condition Description'
+  content: 'Condition Description';
+  color: black;
 }
 handNote:before(9) {
   content: 'HAND NOTE \A';
+  color: black;
 }
 additions:before(9) {
   content: 'ADDITIONS \A';
+  color: black;
 }
 additions > p:before(9) {
-  content: 'General notes on additions '
+  content: 'General notes on additions ';
+  color: black;
 }
 additions > list > item:before(9) {
   content: 'Additional Item \A';
+  color: black;
 }
 item > p:not(p:has(quote)):before(9) {
   content: 'Description';
+  color: black;
 }
 history:before(9) {
     content: 'MANUSCRIPT HISTORY \A';
+    color: black;
 }
 /* BACKGROUND */
 sourceDesc {
@@ -120,7 +134,39 @@ oxy|comment {
 *:before(6) {
     color: darkgreen
 }
-
+msItem locus {
+  background-color: #accfff;
+}
+author {
+  background-color: #ffcdac;
+}
+title {
+  background-color: #fff7ac;
+}
+rubric {
+  background-color: #ff554f;
+}
+incipit {
+  background-color: #edacff;
+}
+quote {
+  background-color: #c2ff9c;
+}
+explicit {
+  background-color: #ff9cc0;
+}
+finalRubric {
+  background-color: #ffbb9c;
+}
+note {
+  background-color: #4c4cdd;
+}
+p{
+  background-color: #c6a5ff;
+}
+handNote desc{
+  background-color: #ffb7a5;
+}
 /* DISPLAY */
 
 * {
@@ -140,6 +186,9 @@ encodingDesc,
 foliation,
 collation,
 accMat,
+provenance,
+acquisition,
+additional,
 body,
 text {
     display: none;
@@ -336,14 +385,14 @@ columns, 15
 )
 }
 locus:before(8) {
-    background-color: lightyellow;
+    background-color: #addfff;
     content: 'from: ' oxy_textfield(
 edit, "@from",
 columns, 15
 )
 }
 locus:before(7) {
-    background-color: lightyellow;
+    background-color: #addfff;
     content: ' to: ' oxy_textfield(
 edit, "@to",
 columns, 15
@@ -384,7 +433,7 @@ values, 'codex, scroll, leaf, other',
 labels, 'codex, scroll, leaf, other'
 )
 }
-supportDesc[material]:before(8) {
+supportDesc[material]:before(7) {
     background-color: lightyellow;
     content: 'material: ' oxy_combobox(
 edit, "@material",
@@ -394,17 +443,16 @@ labels, 'parchment, paper, mixed, unknown'
 )
 }
 handNote:before(8) {
-    background-color: lightyellow;
+    background-color: #a5ffe7;
     content: 'scope: ' oxy_combobox(
 edit, '@scope',
 editable, false,
 values, 'sole, major, minor',
 labels, 'sole, major, minor'
 )
-
 }
 handNote:before(7) {
-    background-color: lightyellow;
+    background-color: #a5ffe7;
     content: 'script: ' oxy_combobox(
 edit, '@script',
 editable, false,
@@ -414,7 +462,7 @@ labels, 'Estrangela, Jacobite Syriac or Syriac with Greek vowels, Nestorian Syri
 
 }
 handNote:before(6) {
-    background-color: lightyellow;
+    background-color: #a5ffe7;
     content: 'medium: ' oxy_textfield(
 edit, "@medium",
 columns, 15
