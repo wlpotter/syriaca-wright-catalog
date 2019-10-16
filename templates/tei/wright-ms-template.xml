@@ -23,7 +23,13 @@
           <msContents>
             <summary/>
             <textLang mainLang=""/>
-            <msItem defective=""/>
+            <msItem defective="">
+              <locus to="" from=""/>
+              <author ref=""/>
+              <title ref="" xml:lang="en"/>
+              <rubric xml:lang="syr"/>
+              <note/>
+            </msItem>
           </msContents>
           <physDesc>
             <objectDesc form="$MENU$">
@@ -51,6 +57,9 @@
                 <desc>$FIXME$</desc>
                 <!-- button to add handNote elements -->
                 <!-- JK: pending -->
+              </handNote>
+              <handNote scope="minor" script="syr" medium="">
+                <desc/>
               </handNote>
             </handDesc>
             <additions>
