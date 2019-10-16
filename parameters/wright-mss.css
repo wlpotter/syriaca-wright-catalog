@@ -6,21 +6,28 @@
 
 /* Highlight those elements whose text nodes are targets for editing */
 idno,
-locus,
+msItem > locus,
 rubric,
 incipit,
+explicit,
+quote,
+finalRubric,
 author,
 note,
 title,
 handNote > desc,
 additions > p,
-item > p,
-condition p,
+item > p:not(p:has(quote)),
+condition > p,
 origDate,
 origPlace,
 change {
     border: 1px green solid;
     background-color: lightyellow;
+    visibility: -oxy-collapse-text ;
+    content: oxy_textfield(
+      edit, "#text", columns, 100
+      );
 }
 
 /* labels for elements that are targets for editing */
@@ -28,6 +35,9 @@ TEI:before(9),
 locus:before(9),
 rubric:before(9),
 incipit:before(9),
+explicit:before(9),
+quote:before(9),
+finalRubric:before(9),
 author:before(9),
 note:before(9),
 title:before(9),
@@ -41,14 +51,11 @@ change:before(9) {
 TEI:before(9) {
     content: 'Wright manuscript metadata '
 }
-additions:before(9) {
-    content: 'notes on additions: '
-}
 msIdentifier > idno:before(9) {
     content: 'manuscript ID: '
 }
 altIdentifier > idno:before(9) {
-    content: 'alternate ID: '
+    content: 'BL Shelfmark: '
 }
 msContents:before(9) {
     content: 'MANUSCRIPT CONTENTS \A';
@@ -59,11 +66,27 @@ msItem:before(9) {
 physDesc:before(9) {
     content: 'MANUSCRIPT PHYSICAL DESCRIPTION \A';
 }
+condition > list > item > p:before(9) {
+  content: 'Condition Description'
+}
+handNote:before(9) {
+  content: 'HAND NOTE \A';
+}
+additions:before(9) {
+  content: 'ADDITIONS \A';
+}
+additions > p:before(9) {
+  content: 'General notes on additions '
+}
+additions > list > item:before(9) {
+  content: 'Additional Item \A';
+}
+item > p:not(p:has(quote)):before(9) {
+  content: 'Description';
+}
 history:before(9) {
     content: 'MANUSCRIPT HISTORY \A';
 }
-
-
 /* BACKGROUND */
 sourceDesc {
     background: ghostwhite
@@ -73,6 +96,9 @@ sourceDesc {
 msContents,
 msItem,
 physDesc,
+handNote,
+additions,
+additions > list > item,
 history {
     border: 2px black solid;
     background-color: white;
@@ -133,9 +159,8 @@ oxy|processing-instruction {
 *:lang(ar-Syrc),
 *:lang(ar-Syrj),
 *:lang(ar-Syrn) {
-    font-family: noto, 'Serto Urhoy', 'Estrangelo Nisibin';
-    text-align: right;
-    font-size: 24px;
+    font-family: 'East Syriac Adiabene';
+    font-size: 16px;
 }
 *:lang(cop) {
     font-family: antinoou;
@@ -146,29 +171,30 @@ oxy|processing-instruction {
 
 /* MARGINS */
 * {
-    margin-left: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 /* SPECIAL OXYGEN */
 
 msContents:not(msContents:has(msItem)):after(1)
 {
-    content: 
+    content:
     oxy_button(
 actionID, "append.child.msItem");
 }
 msItem:last-of-type:after(0) {
-    content: 
+    content:
     oxy_button(
 actionID, "append.sibling.msItem");
 }
 
 msItem:before(7) {
     background-color: lightyellow;
-    content: 
+    content:
     'defective? ' oxy_checkbox(
-edit, "@defective", 
-values, "true", 
+edit, "@defective",
+values, "true",
 uncheckedValues, "false");
 }
 msItem:not(msItem:has(locus)):after(1),
@@ -176,144 +202,156 @@ msItem > quote:not(quote:has(locus)):after(1),
 msItem > explicit:not(explict:has(locus)):after(1),
 msItem > finalRubric:not(finalRubric:has(locus)):after(1)
 {
-    content: 
+    content:
     oxy_button(
 actionID, "append.child.locus");
 }
 msItem:not(msItem:has(author)):after(2)
 {
-    content: 
+    content:
     oxy_button(
 actionID, "append.child.author");
 }
 msItem:not(msItem:has(title)):after(3)
 {
-    content: 
+    content:
     oxy_button(
 actionID, "append.child.title");
 }
 msItem:not(msItem:has(rubric)):after(4)
 {
-    content: 
+    content:
     oxy_button(
 actionID, "append.child.rubric");
 }
 msItem:not(msItem:has(incipit)):after(5)
 {
-    content: 
+    content:
     oxy_button(
 actionID, "append.child.incipit");
 }
 msItem:not(msItem:has(quote)):after(6)
 {
-    content: 
+    content:
     oxy_button(
 actionID, "append.child.quote");
 }
 msItem:not(msItem:has(explicit)):after(7)
 {
-    content: 
+    content:
     oxy_button(
 actionID, "append.child.explicit");
 }
 msItem:not(msItem:has(finalRubric)):after(8)
 {
-    content: 
+    content:
     oxy_button(
 actionID, "append.child.finalRubric");
 }
 msItem:not(msItem:has(note)):after(9)
 {
-    content: 
+    content:
     oxy_button(
 actionID, "append.child.note");
 }
 msItem:not(msItem:has(msItem)):after(10)
 {
-    content: 
+    content:
     oxy_button(
 actionID, "append.child.msItem");
 }
 msItem locus:last-of-type:after(1) {
-    content: 
+    content:
     oxy_button(
 actionID, "append.sibling.locus");
 }
 msItem author:last-of-type:after(1) {
-    content: 
+    content:
     oxy_button(
 actionID, "append.sibling.author");
 }
 msItem title:last-of-type:after(1) {
-    content: 
+    content:
     oxy_button(
 actionID, "append.sibling.title");
 }
 msItem rubric:last-of-type:after(1) {
-    content: 
+    content:
     oxy_button(
 actionID, "append.sibling.rubric");
 }
 msItem incipit:last-of-type:after(1) {
-    content: 
+    content:
     oxy_button(
 actionID, "append.sibling.incipit");
 }
 msItem quote:last-of-type:after(1) {
-    content: 
+    content:
     oxy_button(
 actionID, "append.sibling.quote");
 }
 msItem explicit:last-of-type:after(1) {
-    content: 
+    content:
     oxy_button(
 actionID, "append.sibling.explicit");
 }
 msItem finalRubric:last-of-type:after(1) {
-    content: 
+    content:
     oxy_button(
 actionID, "append.sibling.finalRubric");
 }
 msItem note:last-of-type:after(1) {
-    content: 
+    content:
     oxy_button(
 actionID, "append.sibling.note");
 }
+handDesc:last-of-type:after(1)
+{
+    content:
+    oxy_button(
+actionID, "append.sibling.handNote");
+}
+additions list item:last-of-type:after(1)
+{
+    content:
+    oxy_button(
+actionID, "append.sibling.addition");
+}
 change[when]:before(8) {
     content: oxy_datePicker(
-edit, "@when", 
+edit, "@when",
 format, "yyyy-MM-dd")
 }
 *[href] {
-    content: 
+    content:
     oxy_urlChooser(
-edit, "@href", 
+edit, "@href",
 columns 25);
 }
 change[who]:before(7) {
     background-color: lightyellow;
     content: 'who: ' oxy_textfield(
-edit, "@who", 
+edit, "@who",
 columns, 15
 )
 }
 locus:before(8) {
     background-color: lightyellow;
     content: 'from: ' oxy_textfield(
-edit, "@from", 
+edit, "@from",
 columns, 15
 )
 }
 locus:before(7) {
     background-color: lightyellow;
     content: ' to: ' oxy_textfield(
-edit, "@to", 
+edit, "@to",
 columns, 15
 )
 }
 *[ref]:before(8) {
     content: 'ref: ' oxy_textfield(
-edit, "@ref", 
+edit, "@ref",
 columns, 15
 )
 }
@@ -321,9 +359,9 @@ columns, 15
 {
     background-color: lightyellow;
     content: 'language: ' oxy_combobox(
-edit, '@xml:lang', 
-editable, false, 
-values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, ar-Syrj, ar-Syrn, en, ar, fr, de, la, grc, cop', 
+edit, '@xml:lang',
+editable, false,
+values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, ar-Syrj, ar-Syrn, en, ar, fr, de, la, grc, cop',
 labels, 'Unvocalized Syriac of any variety or period, Syriac in Estrangela, Vocalized West Syriac, Vocalized East Syriac, Melkite Syriac, Palestinian Syriac, Unvocalized or Undetermined Arabic Garshuni, Arabic Garshuni in Vocalized West Syriac Script, Arabic Garshuni in Vocalized East Syriac Script, English, Arabic, French, German, Latin, Ancient Greek, Coptic'
 )
 }
@@ -331,32 +369,36 @@ labels, 'Unvocalized Syriac of any variety or period, Syriac in Estrangela, Voca
 {
     background-color: lightyellow;
     content: 'language: ' oxy_combobox(
-edit, '@mainLang', 
-editable, false, 
-values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, ar-Syrj, ar-Syrn, en, ar, fr, de, la, grc, cop', 
+edit, '@mainLang',
+editable, false,
+values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, ar-Syrj, ar-Syrn, en, ar, fr, de, la, grc, cop',
 labels, 'Unvocalized Syriac of any variety or period, Syriac in Estrangela, Vocalized West Syriac, Vocalized East Syriac, Melkite Syriac, Palestinian Syriac, Unvocalized or Undetermined Arabic Garshuni, Arabic Garshuni in Vocalized West Syriac Script, Arabic Garshuni in Vocalized East Syriac Script, English, Arabic, French, German, Latin, Ancient Greek, Coptic'
 )
 }
 objectDesc[form]:before(8) {
     background-color: lightyellow;
-    content: 'form: ' oxy_textfield(
-edit, "@form", 
-columns, 15
+    content: 'form: ' oxy_combobox(
+edit, "@form",
+editable, false,
+values, 'codex, scroll, leaf, other',
+labels, 'codex, scroll, leaf, other'
 )
 }
 supportDesc[material]:before(8) {
     background-color: lightyellow;
-    content: 'material: ' oxy_textfield(
-edit, "@material", 
-columns, 15
+    content: 'material: ' oxy_combobox(
+edit, "@material",
+editable, false,
+values, 'perg, chart, mixed, unknown',
+labels, 'parchment, paper, mixed, unknown'
 )
 }
 handNote:before(8) {
     background-color: lightyellow;
     content: 'scope: ' oxy_combobox(
-edit, '@scope', 
-editable, false, 
-values, 'sole, major, minor', 
+edit, '@scope',
+editable, false,
+values, 'sole, major, minor',
 labels, 'sole, major, minor'
 )
 
@@ -364,17 +406,17 @@ labels, 'sole, major, minor'
 handNote:before(7) {
     background-color: lightyellow;
     content: 'script: ' oxy_combobox(
-edit, '@script', 
-editable, false, 
-values, 'syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, mixed, unknown', 
+edit, '@script',
+editable, false,
+values, 'syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, mixed, unknown',
 labels, 'Estrangela, Jacobite Syriac or Syriac with Greek vowels, Nestorian Syriac or Syriac with pointed vowels, Malkite or Melkite, Palestinian Syriac, Arabic translation in Syriac Characters, mixed, unknown'
 )
 
 }
 handNote:before(6) {
     background-color: lightyellow;
-    content: 'ref: ' oxy_textfield(
-edit, "@medium", 
+    content: 'medium: ' oxy_textfield(
+edit, "@medium",
 columns, 15
 )
 
