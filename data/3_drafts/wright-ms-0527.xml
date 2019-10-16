@@ -1,5 +1,5 @@
 <?oxygen RNGSchema="../../schemas/syriaca-tei-main.rnc" type="compact"?>
-<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-stylesheet type="text/css" href="../../parameters/wright-mss.css"?><TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
     <fileDesc>
       <titleStmt>
@@ -27,8 +27,9 @@
               <author ref="url://some-id">Eusebius of Caesarea</author>
               <title ref="Letter to Carpianus" xml:lang="syr">ܫܠ̣ܡܬ ܐܓܪܬܐ ܕܟܬ̣ܒ ܐܘܣܒܝܣ̣ ܠܩܪܦܝܢܘܣ̣.
                 ܥܠ ܦܘܫܩܐ ܕܩ̈ܢܘܢܐ. </title>
+              <title ref="" xml:lang="" xmlns=""/>
               <rubric xml:lang="syr">none provided</rubric>
-              <incipit xml:lang="syr">none provided</incipit>
+              <incipit xml:lang="syr"/>
               <quote xml:lang="syr">
                 <locus from="1" to="2"/>Some quote</quote>
               <explicit xml:lang="syr"><locus from="4" to="5"/>oae</explicit>
