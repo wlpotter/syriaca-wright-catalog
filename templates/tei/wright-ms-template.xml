@@ -23,11 +23,17 @@
           <msContents>
             <summary/>
             <textLang mainLang=""/>
-            <msItem defective="">
+            <msItem defective="true">
               <locus to="" from=""/>
               <author ref=""/>
               <title ref="" xml:lang="en"/>
               <rubric xml:lang="syr"/>
+              <incipit xml:lang="syr"/>
+              <quote xml:lang="syr">
+                <locus from="" to=""/>
+              </quote>
+              <explicit xml:lang="syr"/>
+              <finalRubric xml:lang="syr"/>
               <note/>
             </msItem>
           </msContents>
