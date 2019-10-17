@@ -345,11 +345,6 @@ msItem:not(msItem:has(msItem)):after(10)
     oxy_button(
 actionID, "append.child.msItem");
 }
-msItem locus:last-of-type:after(1) {
-    content:
-    oxy_button(
-actionID, "append.sibling.locus");
-}
 msItem author:last-of-type:after(1) {
     content:
     oxy_button(
@@ -426,6 +421,20 @@ change[when]:before(8) {
     content: oxy_datePicker(
 edit, "@when",
 format, "yyyy-MM-dd")
+}
+change:last-of-type:after(0){
+  content: "ADD PLANNED CHANGES: \A" oxy_button(actionID, "append.sibling.change.arabic")
+  oxy_button(actionID, "append.sibling.change.vocalization")
+  oxy_button(actionID, "append.sibling.change.arithmetical")
+  oxy_button(actionID, "append.sibling.change.question")
+  oxy_button(actionID, "append.sibling.change.missing")
+  oxy_button(actionID, "append.sibling.change.syriac")
+  oxy_button(actionID, "append.sibling.change.greek")
+  oxy_button(actionID, "append.sibling.change.coptic")
+  oxy_button(actionID, "append.sibling.change.table")
+  oxy_button(actionID, "append.sibling.change.reconstruction")
+  oxy_button(actionID, "append.sibling.change.consultation")
+  oxy_button(actionID, "append.sibling.change.palimpsest")
 }
 *[href] {
     content:
