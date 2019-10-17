@@ -26,7 +26,7 @@ change {
     background-color: lightyellow;
     visibility: -oxy-collapse-text ;
     content: '\A' oxy_textfield(
-      edit, "#text", columns, 100
+      edit, "#text", columns, 50
       ) '\A';
 }
 
@@ -80,6 +80,7 @@ condition > list > item > p:before(9) {
 handNote:before(9) {
   content: 'HAND NOTE \A';
   color: black;
+  background-color: #ffb7a5;
 }
 additions:before(9) {
   content: 'ADDITIONS \A';
@@ -168,7 +169,7 @@ additions > list >item{
 p{
   background-color: inherit;
 }
-handNote desc{
+handNote, handNote > desc{
   background-color: #ffb7a5;
 }
 item > p:not(p:has(quote)) {
@@ -432,15 +433,6 @@ format, "yyyy-MM-dd")
 edit, "@href",
 columns 25);
 }
-change[who]:before(7) {
-    background-color: lightyellow;
-    content: 'who: ' oxy_combobox(
-edit, "@who",
-editable, false,
-values, "wpotter, jpagan, lruth, akelly, dmichelson",
-labels, "Will Potter, Jessie Pagan, Lindsay Ruth, Anna Kelly, David Michelson"
-)
-}
 locus:before(8) {
     background-color: #addfff;
     content: 'from: ' oxy_textfield(
@@ -456,14 +448,15 @@ columns, 15
 )
 }
 *[ref]:before(8) {
-    content: 'ref: ' oxy_textfield(
+    content: 'URI: ' oxy_textfield(
 edit, "@ref",
-columns, 15
+columns, 30
 )
 }
 *[xml|lang]:before(7)
 {
     background-color: inherit;
+    color: black;
     content: 'language: ' oxy_combobox(
 edit, '@xml:lang',
 editable, false,
@@ -471,6 +464,7 @@ values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, ar-
 labels, 'Unvocalized Syriac of any variety or period, Syriac in Estrangela, Vocalized West Syriac, Vocalized East Syriac, Melkite Syriac, Palestinian Syriac, Unvocalized or Undetermined Arabic Garshuni, Arabic Garshuni in Vocalized West Syriac Script, Arabic Garshuni in Vocalized East Syriac Script, English, Arabic, French, German, Latin, Ancient Greek, Coptic'
 )
 }
+
 *[mainLang]:before(7)
 {
     background-color: inherit;
