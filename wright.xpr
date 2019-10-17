@@ -1799,7 +1799,7 @@
                                                                 <String>append.sibling.dateCustom</String>
                                                             </field>
                                                             <field name="name">
-                                                                <String>Add Dating Method</String>
+                                                                <String>Add Custom Date</String>
                                                             </field>
                                                             <field name="description">
                                                                 <String>Adds a date element with a dating method other than Gregorian (e.g. Seleucid/AG)</String>
