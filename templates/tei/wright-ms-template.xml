@@ -61,8 +61,6 @@
               <handNote xml:id="handNote1" scope="$MENU$" script="$MENU$"
                 medium="$FIXME$[usually &apos;unknown&apos;">
                 <desc>$FIXME$</desc>
-                <!-- button to add handNote elements -->
-                <!-- JK: pending -->
               </handNote>
               <handNote scope="minor" script="syr" medium="">
                 <desc/>
@@ -76,8 +74,6 @@
                   <p>$FIXME$</p>
                   <p><quote xml:lang="syr">$FIXME$</quote></p>
                 </item>
-                <!-- button to add item elements -->
-                <!-- JK: pending -->
               </list>
             </additions>
             <bindingDesc>
@@ -90,15 +86,8 @@
           </physDesc>
           <history>
             <origin>
-              <!-- JK: I haven't yet supported the next element, pending discussion -->
-              <origDate notBefore="$FIXME$" notAfter="$FIXME$" from="$FIXME$" to="$FIXME$" when="$FIXME$"
-                >$FIXME$</origDate>
-              <!-- These attributes are mutually exclusive, how should we handle this? @when is mutually exclusive with @notBefore and @notAfter -->
-              <!-- JK: this needs to be handled at the schema level; doesn't have to be RELAX-NG, it could be Schematron -->
-              <!-- Button to add origDate and to add a custom origDate based on below -->
-              <!-- JK: to be discussed; I recommend a Schematron quick fix -->
-              <origDate notBefore-custom="$FIXME$" notAfter-custom="$FIXME$" from-custom="$FIXME$"
-                to-custom="$FIXME$" when-custom="$FIXME$" datingMethod="$MENU$">$FIXME$</origDate>
+              <origDate notBefore="$FIXME$" notAfter="$FIXME$" from="$FIXME$" to="$FIXME$"
+                when="$FIXME$">$FIXME$</origDate>
               <origPlace ref="$FIXME$" xml:lang="$MENU$">$FIXME$</origPlace>
             </origin>
             <provenance/>
@@ -114,7 +103,6 @@
     <profileDesc/>
     <revisionDesc status="draft">
       <change when="$ISODATEFIXME$" who="$MENU$">Initial TEI encoding.</change>
-      <!-- JK: I'll add an add change button -->
     </revisionDesc>
   </teiHeader>
   <facsimile>
