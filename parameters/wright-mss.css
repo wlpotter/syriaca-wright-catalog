@@ -47,6 +47,7 @@ origPlace:before(9),
 change:before(9) {
     content: oxy_local-name() ' ';
     color: black;
+    font-size: 18px;
 }
 /* exceptions to the general label rule above */
 TEI:before(9) {
@@ -146,10 +147,10 @@ title {
   background-color: #fff7ac;
 }
 rubric {
-  background-color: #ff554f;
+  background-color: #edacff;
 }
 incipit {
-  background-color: #edacff;
+  background-color: #dd554f;
 }
 quote {
   background-color: #c2ff9c;
@@ -161,7 +162,7 @@ finalRubric {
   background-color: #ffbb9c;
 }
 note {
-  background-color: #4c4cdd;
+  background-color: #e8e666;
 }
 additions > list >item{
   background-color: #c6a5ff;
@@ -270,7 +271,6 @@ msItem > finalRubric:not(finalRubric:has(locus)):after(1)
     oxy_button(
 actionID, "append.child.locus");
 }
-msItem > locus:after(2),
 msItem > author:after(2),
 msItem > title:after(2),
 msItem > rubric:after(2),
