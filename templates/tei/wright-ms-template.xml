@@ -15,15 +15,15 @@
       <sourceDesc>
         <msDesc>
           <msIdentifier>
-            <idno type="URI">$FIXME$</idno>
+            <idno type="URI"></idno>
             <altIdentifier>
-              <idno type="BL-Shelfmark">$FIXME$ [example, Add MS $$$, ff]</idno>
+              <idno type="BL-Shelfmark"></idno>
             </altIdentifier>
           </msIdentifier>
           <msContents>
             <summary/>
-            <textLang mainLang=""/>
-            <msItem defective="true">
+            <textLang mainLang="syr"/>
+            <msItem>
               <locus to="" from=""/>
               <author ref=""/>
               <title ref="" xml:lang="en"/>
@@ -32,14 +32,18 @@
               <quote xml:lang="syr">
                 <locus from="" to=""/>
               </quote>
-              <explicit xml:lang="syr"/>
-              <finalRubric xml:lang="syr"/>
+              <explicit xml:lang="syr">
+                <locus to="" from=""/>
+              </explicit>
+              <finalRubric xml:lang="syr">
+                <locus to="" from=""/>
+              </finalRubric>
               <note/>
             </msItem>
           </msContents>
           <physDesc>
-            <objectDesc form="$MENU$">
-              <supportDesc material="$MENU$">
+            <objectDesc form="codex">
+              <supportDesc material="perg">
                 <extent>
                   <measure unit="content_pending" quantity="-1"/>
                 </extent>
@@ -48,7 +52,7 @@
                 <condition>
                   <list>
                     <item>
-                      <p>$FIXME$</p>
+                      <p></p>
                     </item>
                   </list>
                 </condition>
@@ -58,21 +62,18 @@
               </layoutDesc>
             </objectDesc>
             <handDesc>
-              <handNote xml:id="handNote1" scope="$MENU$" script="$MENU$"
-                medium="$FIXME$[usually &apos;unknown&apos;">
-                <desc>$FIXME$</desc>
-              </handNote>
-              <handNote scope="minor" script="syr" medium="">
-                <desc/>
+              <handNote scope="" script=""
+                medium="">
+                <desc></desc>
               </handNote>
             </handDesc>
             <additions>
-              <p>$Box$[Usually empty]</p>
+              <p></p>
               <list>
                 <item>
-                  <locus from="$FIXME$" to="$FIXME$[usually empty]"/>
-                  <p>$FIXME$</p>
-                  <p><quote xml:lang="syr">$FIXME$</quote></p>
+                  <locus from="" to=""/>
+                  <p></p>
+                  <p><quote xml:lang="syr"></quote></p>
                 </item>
               </list>
             </additions>
@@ -86,9 +87,9 @@
           </physDesc>
           <history>
             <origin>
-              <origDate notBefore="$FIXME$" notAfter="$FIXME$" from="$FIXME$" to="$FIXME$"
-                when="$FIXME$">$FIXME$</origDate>
-              <origPlace ref="$FIXME$" xml:lang="$MENU$">$FIXME$</origPlace>
+              <origDate notBefore="" notAfter="" from="" to=""
+                when=""></origDate>
+              <origPlace ref="" xml:lang=""></origPlace>
             </origin>
             <provenance/>
             <acquisition/>
@@ -102,7 +103,7 @@
     </encodingDesc>
     <profileDesc/>
     <revisionDesc status="draft">
-      <change when="$ISODATEFIXME$" who="$MENU$">Initial TEI encoding.</change>
+      <change when="" who="">Initial TEI encoding.</change>
     </revisionDesc>
   </teiHeader>
   <facsimile>
