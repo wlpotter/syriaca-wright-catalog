@@ -184,7 +184,7 @@
                                                                             <serializableOrderedMap>
                                                                                 <entry>
                                                                                     <String>fragment</String>
-                                                                                    <String>&lt;msItem xmlns="http://www.tei-c.org/ns/1.0" defective="true">
+                                                                                    <String>&lt;msItem xmlns="http://www.tei-c.org/ns/1.0">
               &lt;locus to="" from=""/>
               &lt;author ref=""/>
               &lt;title ref="" xml:lang="en"/>
@@ -193,8 +193,12 @@
               &lt;quote xml:lang="syr">
                 &lt;locus from="" to=""/>
               &lt;/quote>
-              &lt;explicit xml:lang="syr"/>
-              &lt;finalRubric xml:lang="syr"/>
+              &lt;explicit xml:lang="syr">
+                &lt;locus to="" from=""/>
+               &lt;/explicit>
+              &lt;finalRubric xml:lang="syr">
+                &lt;locus to="" from=""/>
+               &lt;/finalRubric>
               &lt;note/>
             &lt;/msItem></String>
                                                                                 </entry>
@@ -266,7 +270,7 @@
                                                                             <serializableOrderedMap>
                                                                                 <entry>
                                                                                     <String>fragment</String>
-                                                                                    <String>&lt;msItem xmlns="http://www.tei-c.org/ns/1.0" defective="true">
+                                                                                    <String>&lt;msItem xmlns="http://www.tei-c.org/ns/1.0">
               &lt;locus to="" from=""/>
               &lt;author ref=""/>
               &lt;title ref="" xml:lang="en"/>
@@ -275,8 +279,12 @@
               &lt;quote xml:lang="syr">
                 &lt;locus from="" to=""/>
               &lt;/quote>
-              &lt;explicit xml:lang="syr"/>
-              &lt;finalRubric xml:lang="syr"/>
+              &lt;explicit xml:lang="syr">
+                &lt;locus to="" from=""/>
+               &lt;/explicit>
+              &lt;finalRubric xml:lang="syr">
+                &lt;locus to="" from=""/>
+               &lt;/finalRubric>
               &lt;note/>
             &lt;/msItem></String>
                                                                                 </entry>
