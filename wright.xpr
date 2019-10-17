@@ -1921,6 +1921,846 @@
                                                 </poPatch>
                                                 <poPatch>
                                                     <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>57</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.change.arabic</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Arabic</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Add missing Arabic text.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" type="planned" subtype="arabic">Add missing Arabic text.&lt;/change></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>58</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.change.vocalization</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Vocalization</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Enter vocalization.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" type="planned" subtype="vocalization">Enter vocalization.&lt;/change></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>59</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.change.arithmetical</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Arithmetical</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Enter arithmetical figures.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" type="planned" subtype="arithmetical">Enter arithmetical figures.&lt;/change></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>60</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.change.question</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Question</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Question in Word Doc to be Addressed: [Paste the comment from the Word Doc in the change's text node]</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" type="planned" subtype="question">Question in Word Doc to be Addressed: &lt;/change></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>61</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.change.missing</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Missing</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Missing various unspecified things.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" type="planned" subtype="missing">Missing various unspecified things.&lt;/change></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>62</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.change.syriac</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Syriac</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Add in missing Syriac characters.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" type="planned" subtype="syriac">Add in missing Syriac characters.&lt;/change></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>63</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.change.greek</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Greek</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Add in missing Greek characters.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" type="planned" subtype="greek">Add in missing Greek characters.&lt;/change></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>64</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.change.coptic</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Coptic</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Add in missing Coptic characters.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" type="planned" subtype="coptic">Add in missing Coptic characters.&lt;/change></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>65</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.change.table</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Table</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Table to be revised.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" type="planned" subtype="table">Table to be revised.&lt;/change></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>66</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.change.reconstruction</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Reconstruction</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>One or more msParts need to be encoded into an historical reconstruction of a no longer extant manuscript.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" type="planned" subtype="reconstruction">One or more msParts need to be encoded into an historical reconstruction of a no longer extant manuscript.&lt;/change></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>67</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.change.consultation</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Consultation</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Wright's description is so incomplete that the physical manuscript needs to be consulted and redescribed.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" type="planned" subtype="consultation">Wright's description is so incomplete that the physical manuscript needs to be consulted and redescribed.&lt;/change></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>68</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.change.palimpsest</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Palimpsest</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>This MS is a palimpsest that needs special encoding.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" type="planned" subtype="palimpsest">This MS is a palimpsest that needs special encoding.&lt;/change></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
                                                         <String>priority</String>
                                                     </field>
                                                     <field name="index">
