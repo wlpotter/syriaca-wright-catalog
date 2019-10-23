@@ -23,11 +23,11 @@ origDate,
 origPlace,
 change {
     border: 1px green solid;
-    background-color: lightyellow;
-    visibility: -oxy-collapse-text ;
-    content: '\A' oxy_textfield(
-      edit, "#text", columns, 50
-      ) '\A';
+    background-color: white;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
 
 /* labels for elements that are targets for editing */
