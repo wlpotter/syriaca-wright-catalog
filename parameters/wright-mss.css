@@ -22,12 +22,12 @@ condition > p,
 origDate,
 origPlace,
 change {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
     border: 1px green solid;
-    background-color: white;
-    box-sizing: border-box;
+    background-color: lightyellow;
+    visibility: -oxy-collapse-text ;
+    content: '\A' oxy_textfield(
+      edit, "#text", columns, 50
+      ) '\A';
 }
 
 /* labels for elements that are targets for editing */
