@@ -22,7 +22,7 @@ condition > p,
 origDate,
 origPlace,
 change {
-    border: 1px green solid;
+    border: 20px green solid;
     background-color: white;
     width: 100%;
     padding: 12px 20px;
@@ -141,7 +141,7 @@ msItem locus {
   background-color: #accfff;
 }
 author {
-  background-color: #ffcdac;
+  border: 20px #ffcdac solid;
 }
 title {
   background-color: #fff7ac;
@@ -347,7 +347,7 @@ actionID, "append.child.msItem");
 }
 msItem author:last-of-type:after(1) {
     content:
-    oxy_button(
+    "\A" oxy_button(
 actionID, "append.sibling.author");
 }
 msItem title:last-of-type:after(1) {
@@ -460,7 +460,7 @@ columns, 15
     content: 'URI: ' oxy_textfield(
 edit, "@ref",
 columns, 30
-)
+) "\A"
 }
 *[xml|lang]:before(7)
 {
