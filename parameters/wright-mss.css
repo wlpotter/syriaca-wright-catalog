@@ -554,42 +554,42 @@ columns, 15
 
 }
 origDate:before(8) {
-  background-color: #72b0ff;
+  background-color: #95C6EB;
   color: black;
   content: 'from: ' oxy_textfield(
     edit, '@from', columns, 15
     )
 }
 origDate:before(7) {
-  background-color: #72b0ff;
+  background-color: #95C6EB;
   color: black;
   content: ' to: ' oxy_textfield(
     edit, '@to', columns, 15
     )
 }
 origDate:before(6) {
-  background-color: #72b0ff;
+  background-color: #95C6EB;
   color: black;
   content: ' when: ' oxy_textfield(
     edit, '@when', columns, 15
     )
 }
 origDate:before(5) {
-  background-color: #72b0ff;
+  background-color: #95C6EB;
   color: black;
   content: '\ANot Before: ' oxy_textfield(
     edit, '@notBefore', columns, 15
     )
 }
 origDate:before(4) {
-  background-color: #72b0ff;
+  background-color: #95C6EB;
   color: black;
   content: ' Not After: ' oxy_textfield(
     edit, '@notAfter', columns, 15
     )
 }
 origDate[datingMethod]:before(8){
-  background-color: #75ccff;
+  background-color: #95EBBA;
   color: black;
   content: 'Dating Method: ' oxy_combobox(
     edit, '@datingMethod',
@@ -599,35 +599,35 @@ origDate[datingMethod]:before(8){
     )
 }
 origDate[datingMethod]:before(7){
-  background-color: #75ccff;
+  background-color: #95EBBA;
   color: black;
   content: ' from: ' oxy_textfield(
     edit, '@from-custom', columns, 15
     );
 }
 origDate[datingMethod]:before(6){
-  background-color: #75ccff;
+  background-color: #95EBBA;
   color: black;
   content: ' to: ' oxy_textfield(
     edit, '@to-custom', columns, 15
     );
 }
 origDate[datingMethod]:before(5){
-  background-color: #75ccff;
+  background-color: #95EBBA;
   color: black;
   content: ' when: ' oxy_textfield(
     edit, '@when-custom', columns, 15
     );
 }
 origDate[datingMethod]:before(4){
-  background-color: #75ccff;
+  background-color: #95EBBA;
   color: black;
   content: '\A Not Before: ' oxy_textfield(
     edit, '@notBefore-custom', columns, 15
     );
 }
 origDate[datingMethod]:before(3){
-  background-color: #75ccff;
+  background-color: #95EBBA;
   color: black;
   content: ' Not After: ' oxy_textfield(
     edit, '@notAfter-custom', columns, 15
