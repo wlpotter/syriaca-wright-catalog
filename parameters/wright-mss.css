@@ -481,12 +481,19 @@ TEI[xml|lang]:before(7)
 *[mainLang]:before(7)
 {
     background-color: inherit;
-    content: 'language: ' oxy_combobox(
+    content: 'main language: ' oxy_combobox(
 edit, '@mainLang',
 editable, false,
 values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, ar-Syrj, ar-Syrn, en, ar, fr, de, la, grc, cop',
 labels, 'Unvocalized or undetermined Syriac of any variety or period, Syriac in Estrangela, Vocalized West Syriac, Vocalized East Syriac, Melkite Syriac, Palestinian Syriac, Unvocalized or Undetermined Arabic Garshuni, Arabic Garshuni in Vocalized West Syriac Script, Arabic Garshuni in Vocalized East Syriac Script, English, Arabic, French, German, Latin, Ancient Greek, Coptic'
 )
+}
+*[otherLangs]:before(6)
+{
+  background-color: inherit;
+  content: 'other languages: ' oxy_textfield(
+  edit, '@otherLangs', columns, 15)
+
 }
 objectDesc[form]:before(8) {
     background-color: lightyellow;
