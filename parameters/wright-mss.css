@@ -118,13 +118,13 @@ additions,
 additions > list > item,
 history {
     border: 2px black solid;
-    background-color: white;
+    background-color: ghostwhite;
 
 }
 
 /* COLORS */
 oxy|entity[name ^= '#'] {
-    background-color: green;
+    background-color: black;
 }
 oxy|comment {
     background-color: lightgray;
@@ -138,28 +138,28 @@ oxy|comment {
     color: darkgreen
 }
 msItem locus {
-  background-color: #accfff;
+  background-color: #6AD84B;
 }
 author {
-  background-color: #ffcdac;
+  background-color: #C14AE2;
 }
 title {
-  background-color: #fff7ac;
+  background-color: #4AB7E2;
 }
 rubric {
-  background-color: #edacff;
+  background-color: #E2754A;
 }
 incipit {
-  background-color: #dd554f;
+  background-color: #86D772;
 }
 quote {
-  background-color: #c2ff9c;
+  background-color: #C372D7;
 }
 explicit {
-  background-color: #ff9cc0;
+  background-color: #D79072;
 }
 finalRubric {
-  background-color: #ffbb9c;
+  background-color: #72B9D7;
 }
 note {
   background-color: #e8e666;
@@ -259,6 +259,7 @@ actionID, "append.sibling.msItem");
 
 msItem:before(7) {
     background-color: lightyellow;
+    color: black;
     content:
     'defective? ' oxy_checkbox(
 edit, "@defective",
@@ -448,6 +449,7 @@ columns 25);
 }
 locus:before(8) {
     background-color: #addfff;
+    color: black;
     content: 'from: ' oxy_textfield(
 edit, "@from",
 columns, 15
@@ -455,12 +457,14 @@ columns, 15
 }
 locus:before(7) {
     background-color: #addfff;
+    color: black;
     content: ' to: ' oxy_textfield(
 edit, "@to",
 columns, 15
 )
 }
 *[ref]:before(8) {
+    color: black;
     content: 'URI: ' oxy_textfield(
 edit, "@ref",
 columns, 30
@@ -485,6 +489,7 @@ TEI[xml|lang]:before(7)
 *[mainLang]:before(7)
 {
     background-color: inherit;
+    color: black;
     content: 'main language: ' oxy_combobox(
 edit, '@mainLang',
 editable, false,
@@ -495,11 +500,13 @@ labels, 'Unvocalized or undetermined Syriac of any variety or period, Syriac in 
 *[otherLangs]:before(6)
 {
   background-color: inherit;
+  color: black;
   content: 'other languages: ' oxy_textfield(
   edit, '@otherLangs', columns, 15)
 }
 objectDesc[form]:before(8) {
     background-color: lightyellow;
+    color: black;
     content: 'form: ' oxy_combobox(
 edit, "@form",
 editable, false,
@@ -509,6 +516,7 @@ labels, 'codex, scroll, leaf, other'
 }
 supportDesc[material]:before(7) {
     background-color: lightyellow;
+    color: black;
     content: 'material: ' oxy_combobox(
 edit, "@material",
 editable, false,
@@ -518,6 +526,7 @@ labels, 'parchment, paper, mixed, unknown'
 }
 handNote:before(8) {
     background-color: #a5ffe7;
+    color: black;
     content: 'scope: ' oxy_combobox(
 edit, '@scope',
 editable, false,
@@ -527,6 +536,7 @@ labels, 'sole, major, minor'
 }
 handNote:before(7) {
     background-color: #a5ffe7;
+    color: black;
     content: 'script: ' oxy_combobox(
 edit, '@script',
 editable, false,
@@ -537,6 +547,7 @@ labels, 'Unvocalized Syriac of any variety or period, Estrangela, Jacobite Syria
 }
 handNote:before(6) {
     background-color: #a5ffe7;
+    color: black;
     content: 'medium: ' oxy_textfield(
 edit, "@medium",
 columns, 15
@@ -544,37 +555,43 @@ columns, 15
 
 }
 origDate:before(8) {
-  background-color: #72b0ff;
+  background-color: #95C6EB;
+  color: black;
   content: 'from: ' oxy_textfield(
     edit, '@from', columns, 15
     )
 }
 origDate:before(7) {
-  background-color: #72b0ff;
+  background-color: #95C6EB;
+  color: black;
   content: ' to: ' oxy_textfield(
     edit, '@to', columns, 15
     )
 }
 origDate:before(6) {
-  background-color: #72b0ff;
+  background-color: #95C6EB;
+  color: black;
   content: ' when: ' oxy_textfield(
     edit, '@when', columns, 15
     )
 }
 origDate:before(5) {
-  background-color: #72b0ff;
+  background-color: #95C6EB;
+  color: black;
   content: '\ANot Before: ' oxy_textfield(
     edit, '@notBefore', columns, 15
     )
 }
 origDate:before(4) {
-  background-color: #72b0ff;
+  background-color: #95C6EB;
+  color: black;
   content: ' Not After: ' oxy_textfield(
     edit, '@notAfter', columns, 15
     )
 }
 origDate[datingMethod]:before(8){
-  background-color: #75ccff;
+  background-color: #95EBBA;
+  color: black;
   content: 'Dating Method: ' oxy_combobox(
     edit, '@datingMethod',
     editable, false,
@@ -583,31 +600,36 @@ origDate[datingMethod]:before(8){
     )
 }
 origDate[datingMethod]:before(7){
-  background-color: #75ccff;
+  background-color: #95EBBA;
+  color: black;
   content: ' from: ' oxy_textfield(
     edit, '@from-custom', columns, 15
     );
 }
 origDate[datingMethod]:before(6){
-  background-color: #75ccff;
+  background-color: #95EBBA;
+  color: black;
   content: ' to: ' oxy_textfield(
     edit, '@to-custom', columns, 15
     );
 }
 origDate[datingMethod]:before(5){
-  background-color: #75ccff;
+  background-color: #95EBBA;
+  color: black;
   content: ' when: ' oxy_textfield(
     edit, '@when-custom', columns, 15
     );
 }
 origDate[datingMethod]:before(4){
-  background-color: #75ccff;
+  background-color: #95EBBA;
+  color: black;
   content: '\A Not Before: ' oxy_textfield(
     edit, '@notBefore-custom', columns, 15
     );
 }
 origDate[datingMethod]:before(3){
-  background-color: #75ccff;
+  background-color: #95EBBA;
+  color: black;
   content: ' Not After: ' oxy_textfield(
     edit, '@notAfter-custom', columns, 15
     );
