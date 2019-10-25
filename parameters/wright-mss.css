@@ -500,6 +500,7 @@ labels, 'Unvocalized or undetermined Syriac of any variety or period, Syriac in 
 *[otherLangs]:before(6)
 {
   background-color: inherit;
+  color: black;
   content: 'other languages: ' oxy_textfield(
   edit, '@otherLangs', columns, 15)
 }
