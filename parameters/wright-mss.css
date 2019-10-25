@@ -24,7 +24,6 @@ origPlace,
 change {
     border: 1px green solid;
     background-color: lightyellow;
-    visibility: -oxy-collapse-text ;
     content: '\A' oxy_textfield(
       edit, "#text", columns, 50
       ) '\A';
@@ -211,7 +210,10 @@ text {
 oxy|processing-instruction {
     display: none !important
 }
-
+foreign {
+  display: inline;
+  background-color: white;
+}
 
 /* FONTS */
 *:lang(syr),
