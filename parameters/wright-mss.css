@@ -239,7 +239,11 @@ oxy|processing-instruction {
 }
 
 /* SPECIAL OXYGEN */
-
+textLang:not(textLang[otherLangs]):after(1){
+  content: oxy_button(
+    actionID, "insert.attribute.otherLangs"
+    )
+}
 msContents:not(msContents:has(msItem)):after(1)
 {
     content:
@@ -493,7 +497,6 @@ labels, 'Unvocalized or undetermined Syriac of any variety or period, Syriac in 
   background-color: inherit;
   content: 'other languages: ' oxy_textfield(
   edit, '@otherLangs', columns, 15)
-
 }
 objectDesc[form]:before(8) {
     background-color: lightyellow;
