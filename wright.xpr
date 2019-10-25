@@ -2769,6 +2769,88 @@
                                                 </poPatch>
                                                 <poPatch>
                                                     <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>69</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>insert.attribute.otherLangs</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Add Other MS Languages</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Inserts an otherLangs attribute that allows entry of multiple alternate manuscript languages, separated by a space.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>editAttribute</String>
+                                                                                    <String>true</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>elementLocation</String>
+                                                                                    <String>.</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>name</String>
+                                                                                    <String>otherLangs</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>namespace</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>removeIfEmpty</String>
+                                                                                    <String>false</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>value</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.ChangeAttributeOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
                                                         <String>priority</String>
                                                     </field>
                                                     <field name="index">
