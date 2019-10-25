@@ -270,6 +270,8 @@ uncheckedValues, "false");
 }
 
 msItem:not(msItem:has(locus)):after(1),
+msItem > rubric:not(rubric:has(locus)):after(0),
+msItem > incipit:not(incipit:has(locus)):after(0),
 msItem > quote:not(quote:has(locus)):after(1),
 msItem > explicit:not(explict:has(locus)):after(1),
 msItem > finalRubric:not(finalRubric:has(locus)):after(1)
