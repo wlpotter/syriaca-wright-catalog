@@ -5,24 +5,25 @@
 /* CSS file intended to be used to configure how Wright catalog manuscripts are rendered by oXygen Author */
 
 /* Highlight those elements whose text nodes are targets for editing */
-idno:empty,
-msItem > locus:empty,
-rubric:empty,
-incipit:empty,
-explicit:empty,
-quote:empty,
-finalRubric:empty,
-author:empty,
-note:empty,
-title:empty,
-handNote > desc:empty,
-additions > p:empty,
-item > p:not(p:has(quote)):empty,
-condition > p:empty,
-origDate:empty,
-origPlace:empty,
-change:empty {
+idno,
+msItem > locus,
+rubric,
+incipit,
+explicit,
+quote,
+finalRubric,
+author,
+note,
+title,
+handNote > desc,
+additions > p,
+item > p:not(p:has(quote)),
+condition > p,
+origDate,
+origPlace,
+change {
     border: 1px green solid;
+    background-color: lightyellow;
     content: '\A' oxy_textfield(
       edit, "#text", columns, 50
       ) '\A';
@@ -134,10 +135,6 @@ oxy|comment {
 *:before(7),
 *:before(6) {
     color: darkgreen
-}
-idno, additions > p,
-change {
-  background-color: lightyellow;
 }
 msItem locus {
   background-color: #6AD84B;
@@ -435,7 +432,7 @@ edit, "@when",
 format, "yyyy-MM-dd")
 }
 change:last-of-type:after(0){
-  content: " ADD PLANNED CHANGES: \A" oxy_button(actionID, "append.sibling.change.arabic")
+  content: "ADD PLANNED CHANGES: \A" oxy_button(actionID, "append.sibling.change.arabic")
   oxy_button(actionID, "append.sibling.change.vocalization")
   oxy_button(actionID, "append.sibling.change.arithmetical")
   oxy_button(actionID, "append.sibling.change.question")
