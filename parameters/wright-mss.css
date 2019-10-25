@@ -485,7 +485,7 @@ columns, 30
 edit, '@xml:lang',
 editable, false,
 values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, ar-Syrj, ar-Syrn, en, ar, fr, de, la, grc, cop',
-labels, 'Unvocalized or undetermined Syriac of any variety or period, Syriac in Estrangela, Vocalized West Syriac, Vocalized East Syriac, Melkite Syriac, Palestinian Syriac, Unvocalized or Undetermined Arabic Garshuni, Arabic Garshuni in Vocalized West Syriac Script, Arabic Garshuni in Vocalized East Syriac Script, English, Arabic, French, German, Latin, Ancient Greek, Coptic'
+labels, 'Unvocalized or undetermined Syriac, Syriac in Estrangela, Vocalized West Syriac, Vocalized East Syriac, Melkite Syriac, Palestinian Syriac, Unvocalized or Undetermined Arabic Garshuni, Arabic Garshuni in Vocalized West Syriac Script, Arabic Garshuni in Vocalized East Syriac Script, English, Arabic, French, German, Latin, Ancient Greek, Coptic'
 )
 }
 TEI[xml|lang]:before(7)
@@ -501,15 +501,19 @@ TEI[xml|lang]:before(7)
 edit, '@mainLang',
 editable, false,
 values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, ar-Syrj, ar-Syrn, en, ar, fr, de, la, grc, cop',
-labels, 'Unvocalized or undetermined Syriac of any variety or period, Syriac in Estrangela, Vocalized West Syriac, Vocalized East Syriac, Melkite Syriac, Palestinian Syriac, Unvocalized or Undetermined Arabic Garshuni, Arabic Garshuni in Vocalized West Syriac Script, Arabic Garshuni in Vocalized East Syriac Script, English, Arabic, French, German, Latin, Ancient Greek, Coptic'
+labels, 'Unvocalized or undetermined Syriac, Syriac in Estrangela, Vocalized West Syriac, Vocalized East Syriac, Melkite Syriac, Palestinian Syriac, Unvocalized or Undetermined Arabic Garshuni, Arabic Garshuni in Vocalized West Syriac Script, Arabic Garshuni in Vocalized East Syriac Script, English, Arabic, French, German, Latin, Ancient Greek, Coptic'
 )
 }
 *[otherLangs]:before(6)
 {
   background-color: inherit;
   color: black;
-  content: 'other languages: ' oxy_textfield(
-  edit, '@otherLangs', columns, 15)
+  content: 'other languages: ' oxy_combobox(
+edit, '@otherLangs',
+editable, false,
+values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, Mixed, Unknown',
+labels, 'Unvocalized or undetermined Syriac, Estrangela, Jacobite Syriac or Syriac with Greek vowels, Nestorian Syriac or Syriac with pointed vowels, Malkite or Melkite, Palestinian Syriac, Arabic translation in Syriac Characters, mixed, unknown'
+)
 }
 objectDesc[form]:before(8) {
     background-color: lightyellow;
@@ -548,7 +552,7 @@ handNote:before(7) {
 edit, '@script',
 editable, false,
 values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, Mixed, Unknown',
-labels, 'Unvocalized or undetermined Syriac of any variety or period, Estrangela, Jacobite Syriac or Syriac with Greek vowels, Nestorian Syriac or Syriac with pointed vowels, Malkite or Melkite, Palestinian Syriac, Arabic translation in Syriac Characters, mixed, unknown'
+labels, 'Unvocalized or undetermined Syriac, Estrangela, Jacobite Syriac or Syriac with Greek vowels, Nestorian Syriac or Syriac with pointed vowels, Malkite or Melkite, Palestinian Syriac, Arabic translation in Syriac Characters, mixed, unknown'
 )
 
 }
